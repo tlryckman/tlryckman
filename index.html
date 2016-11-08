@@ -3,6 +3,7 @@
 <head>
 	<meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 </head>
@@ -15,25 +16,35 @@
 		</figure>
 	</div>
 	<div id="reservations">
-		<h1 style="font-size: 24px; font-color: gray; text-align: center; margin-top: 0px; background-color: #061A68; color: white;">Reservations</h1>
+		<h1 style="font-size: 30px; font-color: gray; text-align: center; margin-top: 0px; background-color: #061A68; color: white;">Reservations</h1>
 		<div id="new reservation" style="width: 50%; height: 200px; float: left; background-color: #EBEDF3;">
-			<h2 style="font-size: 16px; color: #061A68; text-align: center;">Make a Reservation</h2>
-			<form style="text-align: center;"> 
-				<p>
-					Name: <input id="name" type="text" placeholder="Name">
-				</p>
-				<p>
-					Day:  <input id="day" type="text" placeholder="Day">
-				</p>
-				<button>Confirm Reservation</button>
+			<h2 style="font-size: 20px; color: #061A68; text-align: center;">Make a Reservation</h2>
+			<form class="form-horizontal" style="text-align: center;"> 
+				<div class="form-group">
+					<label for="inputName" class="col-sm-2 control-label">Name</label>
+				    <div class="col-sm-10">
+				      <input type="name" class="form-control" style="width: 75%;" id="inputName" placeholder="Name">
+				    </div>
+			  	</div>
+			  	<div class="form-group">
+				    <label for="inputDay" class="col-sm-2 control-label">Day</label>
+				    <div class="col-sm-10">
+				      <input type="password" class="form-control" id="inputDay" style="width: 75%;" placeholder="Day">
+				    </div>
+				</div>
+				<div class="form-group">
+    				<div class="col-sm-offset-2 col-sm-19">
+						<button type="button" class="btn btn-success">Confirm Reservation</button>
+					</div>
+				</div>
 			</form>	
 		</div><!--
 		--><div id="new reservation" style="width: 50%; height: 200px; float: right; text-align: center; background-color: #EBEDF3;">
-			<h2 style="font-size: 16px; color: #061A68; text-align: center;">Existing Reservations</h2>
-			<table width="55%" border="1px solid #061A68;" cellspacing="0" cellpadding="2" style="border-collapse:collapse; margin: auto;">
+			<h2 style="font-size: 20px; color: #061A68; text-align: center;">Existing Reservations</h2>
+			<table width="55%" class="table-bordered" style="margin: auto;">
 				<thead>
-					<th>Name</th>
-					<th>Day</th>
+					<th style="text-align: center;">Name</th>
+					<th style="text-align: center;">Day</th>
 				</thead>
 				<tbody>
 				</tbody>
@@ -41,19 +52,20 @@
 		</div>
 	</div>
 	<div>
-		<h1 style="font-size: 24px; text-align: center; margin-top: 5px; background-color: #061A68; color: white;">Come Dine with Us</h1>
-		<div id="map" height="500px;"></div>
+		<h1 style="font-size: 30px; text-align: center; margin-top: 5px; background-color: #061A68; color: white;">Come Dine with Us</h1>
+		<div id="map" style="height: 500px;"></div>
 	</div>
-	<div>
-	<h1 style="font-size: 24px; font-color: gray; text-align: center; margin-top: 0px; background-color: #061A68; color: white;">Customer Reviews</h1>
-	<div style="width: 50%; float: left;">
-		<img src="images/jerry.png" width=80%; style="margin-left: 20px;">
+	
+	<h1 style="font-size: 30px; font-color: gray; text-align: center; margin-top: 0px; background-color: #061A68; color: white; margin-bottom: 25px;">Customer Reviews</h1>
+	<div style="width: 60%; margin: auto;">
+	<div style="width: 50%; float: left; text-align: center;">
+		<img src="images/jerry.png" width=50%;">
 	</div><!--
-	--><div id="review" style="width: 50%; float:right;">
+	--><div id="review" style="width: 45%; float:right; margin-right: 25px;">
 		<p style="font-size: 24px; font-color: gray; vertical-align: middle;">
 			“Big lettuce, big carrots, tomatoes like volleyballs.”
 		</p>
-		<p style="text-align: right; font-size: 18px; font-color: gray; margin-right: 50px;">
+		<p style="text-align: left; font-size: 18px; font-color: gray; margin-left: 50px;">
 			— <em>Jerry Seinfeld, on The BIG Salad</em>
 		</p>
 	</div>
